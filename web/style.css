@@ -1,0 +1,166 @@
+body {
+    /*margin: 0;*/
+    margin: 1%;
+    background: white;
+   /* height: auto;*/
+}
+
+table {
+    font-family: sans-serif;
+    font-size: medium;
+    margin: auto;
+    background: #efebe9;
+    width: 66%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+td{
+    padding: 1.7% 2%;
+}
+/*Селектор потомства (применится к кнопкам внутри таблицы)*/
+table button{
+    background-color: #aec4c7;
+    /*Убрать границы*/
+    border: none;
+    /*Цвет текста*/
+    color: #ffffff;
+    /*Паддинги до текста*/
+    padding: 1% 3%;
+    /*Скруглить края*/
+    border-radius: 4px;
+    /*Размер шрифта*/
+    font-size: medium;
+    /*Убрать светящуюся синюю штуку при нажатии на кнопочку*/
+    outline: none;
+    margin: 1.5% 0.5% 0 0;
+}
+/*Во время наведения*/
+table button:hover{
+    /*отступ по оси Х, отступ по оси У (положительное - вниз), радиус размытия, растяжение, цвет*/
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24);
+    /*RGB + opacity*/
+}
+/*В момент нажатия*/
+table button:active{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.54);
+}
+/*Элемент, который получает фокус*/
+table button:focus{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.54);
+}
+.focused{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.54);
+}
+#plot{
+    border-radius: 10px;
+    background-color: #aec4c7;
+    border: 3px solid #aec4c7;
+}
+table h2{
+    background-color: #aec4c7;
+    display: inline-block;
+    margin-bottom: 1.5%;
+    margin-top: 0;
+    padding: 0.5% 0.5%;
+    color: black;
+    font-size: x-large;
+    border-radius: 4px;
+}
+table p{
+    margin: 0 0;
+    padding: 0 0;
+}
+input[type="text"]{
+    background: white;
+    margin-top: 1.5%;
+    padding: 0.7%;
+    outline: none;
+    font-family: sans-serif;
+    font-size: medium;
+    border-radius: 4px;
+    width: 150px;
+    border: 2px solid #aec4c7;
+}
+input[type=text]:focus {
+   background-color: #e0f7fa;
+}
+select {
+    background: white;
+    font-family: sans-serif;
+    margin-top: 1.5%;
+    padding: 0.7%;
+    outline: none;
+    font-size: medium;
+    border-radius: 4px;
+    border: 2px solid #aec4c7;
+}
+option{
+    font-family: sans-serif;
+    outline: none;
+    font-size: medium;
+}
+.important{
+    font-weight: bold;
+    background-color: #e0f7fa;
+}
+#lab{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+}
+#name{
+    font-size: medium;
+    margin: 0;
+}
+.top1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #aec4c7;
+    color: #ffffff;
+    text-align: center;
+}
+.top2{
+    background:#e0f7fa;
+    text-align: center;
+}
+#send_button{
+    margin-top: 0;
+    font-weight: bold;
+}
+#warning1, #warning2, #warning3{
+    color: red;
+    visibility: hidden;
+    margin-left: 3%;
+}
+#ans{
+    width: 50%;
+}
+#ans h2{
+    background-color: #e0f7fa;
+    display: inline-block;
+    margin-bottom: 1.5%;
+    margin-top: 0;
+    padding: 0 0;
+    color: black;
+    font-size: large;
+    border-radius: 4px;
+}
+#ans td{
+    font-size: medium;
+    width: 50%;
+}
+#ans button{
+    margin: 0 0;
+}
+#ans2, #ans3 {
+    width: 50%;
+    border-radius: 10px;
+    padding: 1% 1%;
+}
+#ans2 td, #ans3 td{
+    font-size: medium;
+    width: 25%;
+    text-align: center;
+}
+
+
